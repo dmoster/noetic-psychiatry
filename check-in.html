@@ -1,128 +1,121 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+        <title>Patient Check-In</title>
 
+        <style>
+            iframe {
+                border: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 mt-2">
+                    <div class="card border-info" id="intakeToDo">
+                        <div class="card-body">
+                            <h1 class="card-title">Welcome back!</h1>
+                            <p class="lead">Thank you for choosing Noetic Psychiatry.</p>
+                            <hr class="my-4">
+                            <p class="text-info">Please complete the checklist below as part of your check-in.</p>
 
-    <title>Patient Check-In</title>
-
-
-    <style>
-        iframe {
-            border: 0px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 mt-2">
-                <div class="card border-info" id="intakeToDo">
-                    <div class="card-body">
-                        <h1 class="card-title">Welcome back!</h1>
-                        <p class="lead">Thank you for choosing Noetic Psychiatry.</p>
-                        <hr class="my-4">
-                        <p class="text-info">Please complete the checklist below as part of your check-in.</p>
-
-                        <form>
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck1" required>
-                                    <label class="form-check-label" for="invalidCheck1">
-                                        <strong>Sign in to your Patient Portal.</strong>
-                                    </label>
-                                </div>
-                                <ul>
-                                    <li>If you haven't yet set up a Patient Portal account, you can get a temporary password from the front desk.</li>
-                                </ul>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck2" required>
-                                    <label class="form-check-label" for="invalidCheck2">
-                                        <strong>Update your personal information.</strong>
-                                    </label>
-                                </div>
-                                <ul>
-                                    <li>Select <strong class="text-info">My Profile</strong> from the left-hand menu.</li>
-                                    <li>Check over your information.</li>
-                                    <li>If anything is missing or incorrect, select <strong class="text-info">Edit</strong> near the top of the page to make any needed changes.</li>
-                                    <li>Save any changes using the <strong class="text-info">Submit</strong> button.</li>
-                                </ul>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck3" required>
-                                    <label class="form-check-label" for="invalidCheck3">
-                                        <strong>E-sign consent forms.</strong>
-                                    </label>
-                                </div>
-                                <ul>
-                                    <li>Select <strong class="text-info">My Health</strong> from the left-hand menu.</li>
-                                    <li>Click <strong class="text-info">Medical Forms</strong> in the drop-down below.</li>
-                                    <li>Read over each form listed and sign any that you haven't already at the bottom of the page.</li>
-                                </ul>    
-                            </div>
-
-                            <div class="form-group">
-                                <div class="alert alert-warning" role="alert"><strong>Note:</strong> Please be sure to sign an <strong class="text-info">Informed Consent for Psychiatric Services</strong> form at the start of <strong>each visit</strong>. Otherwise, we cannot treat you.
+                            <form>
+                                <div class="form-group">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck4" required>
-                                        <label class="form-check-label" for="invalidCheck4">
-                                            <strong class="text-danger">I have signed this form today.</strong>
+                                        <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck1" required>
+                                        <label class="form-check-label" for="invalidCheck1">
+                                            <strong>Sign in to your Patient Portal.</strong>
                                         </label>
                                     </div>
+                                    <ul>
+                                        <li>If you haven't yet set up a Patient Portal account, you can get a temporary password from the front desk.</li>
+                                    </ul>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck5" required>
-                                    <label class="form-check-label" for="invalidCheck5">
-                                        <strong>Sign out.</strong>
-                                    </label>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck2" required>
+                                        <label class="form-check-label" for="invalidCheck2">
+                                            <strong>Update your personal information.</strong>
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>Select <strong class="text-info">My Profile</strong> from the left-hand menu.</li>
+                                        <li>Check over your information.</li>
+                                        <li>If anything is missing or incorrect, select <strong class="text-info">Edit</strong> near the top of the page to make any needed changes.</li>
+                                        <li>Save any changes using the <strong class="text-info">Submit</strong> button.</li>
+                                    </ul>
                                 </div>
-                                <ul>
-                                    <li> Click the <strong class="text-info">Sign Out</strong> button in the top-right corner of the screen to log out of your Patient Portal.</li>
-                                </ul>
-                            </div>
 
-                            <hr class="my-4">
-                            <p>That's it! Hit the button below to finish up.</p>
-                            <button class="btn btn-success btn-block" type="submit">Done</button>
-                        </form>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck3" required>
+                                        <label class="form-check-label" for="invalidCheck3">
+                                            <strong>E-sign consent forms.</strong>
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>Select <strong class="text-info">My Health</strong> from the left-hand menu.</li>
+                                        <li>Click <strong class="text-info">Medical Forms</strong> in the drop-down below.</li>
+                                        <li>Read over each form listed and sign any that you haven't already at the bottom of the page.</li>
+                                    </ul>    
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="alert alert-warning" role="alert"><strong>Note:</strong> Please be sure to sign an <strong class="text-info">Informed Consent for Psychiatric Services</strong> form at the start of <strong>each visit</strong>. Otherwise, we cannot treat you.
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck4" required>
+                                            <label class="form-check-label" for="invalidCheck4">
+                                                <strong class="text-danger">I have signed this form today.</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox before text" id="invalidCheck5" required>
+                                        <label class="form-check-label" for="invalidCheck5">
+                                            <strong>Sign out.</strong>
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li> Click the <strong class="text-info">Sign Out</strong> button in the top-right corner of the screen to log out of your Patient Portal.</li>
+                                    </ul>
+                                </div>
+
+                                <hr class="my-4">
+                                <p>That's it! Hit the button below to finish up.</p>
+                                <button class="btn btn-success btn-block" type="submit">Done</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+
+            
+                <div class="col-lg-8 mt-2">
+                        <iframe src="https://17324.portal.athenahealth.com/" width="100%" height="100%"></iframe>
+                </div>       
             </div>
-
-        
-            <div class="col-lg-8 mt-2">
-                    <iframe src="https://17324.portal.athenahealth.com/" width="100%" height="100%"></iframe>
-            </div>       
+            
         </div>
-        
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-
-</body>
-
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
 </html>
